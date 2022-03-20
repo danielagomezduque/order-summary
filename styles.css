@@ -1,79 +1,71 @@
 body {
-    width: 100vw;
     height: 100vh;
     background-color: hsl(225, 100%, 94%);
-    /* display: grid; */
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    display: grid;
+    place-items: center;
 }
 .mainContainer{
-    background-color: white;
-    /* display: grid; */
-    padding: 0rem 0rem;
+    position: absolute;
     width: 80%;
-    height: 70%;
+    background-color: white;
     border-radius: 20px;
-    /* margin: 20% 5%; */
-    margin-top: 25%
+    position: relative;
+    
 }
 .imgContainer{
-    /* height: 70%; */
-    text-align: center;
     margin-bottom: 1rem;
-}
-.aA{
-    width: 100%;
-    height: 100%;
-    /* align-self: center; */
     border-radius: 20px 20px 0px 0px;   
+    overflow: hidden;
+}
+.imgContainer img{
+    width: 100%;
 }
 .summaryContainer span{
     display: block;
-    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+    
 }
 .summaryTitle{
     text-align: center;
-    font-family: 'Red Hat Display', sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
     color: rgb(8, 8, 53);
 }
 .summaryBody{
-    margin-top: 1rem;
-    margin-left: 2.9rem;
-    margin-right: 2.9rem;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.7rem;
     color:hsl(224, 23%, 55%);
-    font-family: 'Red Hat Display', sans-serif;
 }
 .planContainer{
     background-color: hsl(225, 100%, 98%);
     display: flex;
-    padding: 1.5rem 0.5rem;
-    height: 3rem;
+    font-size: 0.8rem;
+    place-items: center;
+    height: 4rem;
     width: 80%;
-    margin: auto;
     border-radius: 10px;
+    justify-content: space-evenly;
+    margin: auto;
 }
 .planImg img {
-    margin-right: 1.5rem;
-    margin-left: 0.8rem;
+    padding-right: 1rem;
 }
 .planTypeTitle{
     margin-top: 1.8rem;
     font-weight: bold;
     color: rgb(8, 8, 53);
-    font-family: 'Red Hat Display', sans-serif;
 }
 .planTypePrice{
     display: grid;
     margin-top: 0.3rem;
     color:hsl(224, 23%, 55%);
-    font-family: 'Red Hat Display', sans-serif;
 }
 .planChange{
-    margin: 1rem 1rem;
+    /* margin: auto; */
 
 }
 .planButton{
@@ -83,10 +75,10 @@ body {
     color: hsl(245, 75%, 52%);
     font-weight: bold;
     text-decoration: underline;
-    font-family: 'Red Hat Display', sans-serif;
+   font-family: inherit;
+   padding-left: 1rem;
 }
 .paymentContainer{
-    margin-top: 1rem;
     padding:1rem;
     text-align: center;
 }
@@ -98,21 +90,19 @@ body {
    color: white;
    box-shadow: 0px 10px 20px hsl(224, 23%, 55%);
    border: none;
-   /* margin: 0rem 1rem; */
    font-weight: 900;
    font-size: 1rem;
-   font-family: 'Red Hat Display', sans-serif;
+   font-family: inherit;
 }
 .cancelButton{
     width: 90%;
     padding: 1rem 0rem;
     border: none;
     outline: none;
-    /* margin: 0rem 1rem; */
     color:hsl(224, 23%, 55%);
     font-weight: bold;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 90%;
     font-size: 1rem;
     background-color: transparent;
+   font-family: inherit;
+
 }
